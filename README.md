@@ -24,7 +24,7 @@ Utilizing the game is remarkably straightforward. With each turn, a shape and a 
 
 * The players are also transformed into binary images using a pretrained segmentation model called YOLO-7
 
-![Alt Text](https://github.com/itsikshteinberger/FUCKakte/blob/main/sim/yoloy.png)
+![Alt Text](https://github.com/itsikshteinberger/FUCKakte/blob/main/sim/yolo.png)
 
 * Finally, the computer calculates the players' performance using cross correlation between the two images.
 
@@ -33,6 +33,13 @@ $$
 $$
 
 > The cross correlation equation
+
+<br/> <br/>
+* The game is written in pygame, before using make sure you have all the necessary libraries. <br/>
+* You can also add images of objects on a white background of your choice. <br/>
+* The game won the 2023 BMDC Hackathon! <br/>
+Enjoy :)
+
 
 
 
