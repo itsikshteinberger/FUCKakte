@@ -20,3 +20,19 @@ Utilizing the game is remarkably straightforward. With each turn, a shape and a 
 4. An erosion operation is performed on the binary image. Erosion reduces small noise and fine details while maintaining the main structure of shapes.
 5. Following the erosion, a dilation operation is carried out. Dilation enlarges the shapes in the image while maintaining their core features.
 
+![Alt Text](https://github.com/itsikshteinberger/FUCKakte/blob/main/sim/Figure_1.png)
+
+* The players are also transformed into binary images using a pretrained segmentation model called YOLO-7
+
+![Alt Text](https://github.com/itsikshteinberger/FUCKakte/blob/main/sim/yoloy.png)
+
+* Finally, the computer calculates the players' performance using cross correlation between the two images.
+
+$$
+\text{Cross-Correlation}(x, y) = \sum_{i=-\infty}^{\infty} \sum_{j=-\infty}^{\infty} A(i, j) \cdot B(i - x, j - y)
+$$
+
+> The cross correlation equation
+
+
+
